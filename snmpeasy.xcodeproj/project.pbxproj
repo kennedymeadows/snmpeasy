@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		199767AC2CF9095900E311E5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 199767AB2CF9095200E311E5 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		199767632CF8E03A00E311E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		1997674F2CF8E03900E311E5 /* snmpeasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snmpeasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199767622CF8E03A00E311E5 /* snmpeasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snmpeasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1997676C2CF8E03A00E311E5 /* snmpeasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snmpeasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		199767AB2CF9095200E311E5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		199767AA2CF9020500E311E5 /* Exceptions for "snmpeasy" folder in "snmpeasy" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1997674E2CF8E03900E311E5 /* snmpeasy */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		199767512CF8E03900E311E5 /* snmpeasy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				199767AA2CF9020500E311E5 /* Exceptions for "snmpeasy" folder in "snmpeasy" target */,
+			);
 			path = snmpeasy;
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 		199767462CF8E03900E311E5 = {
 			isa = PBXGroup;
 			children = (
+				199767AB2CF9095200E311E5 /* README.md */,
 				199767512CF8E03900E311E5 /* snmpeasy */,
 				199767652CF8E03A00E311E5 /* snmpeasyTests */,
 				1997676F2CF8E03A00E311E5 /* snmpeasyUITests */,
@@ -212,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199767AC2CF9095900E311E5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +416,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"snmpeasy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = snmpeasy/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app needs access to the local network to perform SNMP operations.\n$(NETWORK_USAGE_DESCRIPTION)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -422,10 +444,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"snmpeasy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = snmpeasy/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app needs access to the local network to perform SNMP operations.\n$(NETWORK_USAGE_DESCRIPTION)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
